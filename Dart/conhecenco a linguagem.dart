@@ -68,4 +68,60 @@ void main() {
 
   bool teste = 3 > 5;
   print("resultado do boleano $teste");
+
+  print(!true);
+  //TESTANDO IF
+
+  if (false) {
+    print("Teste");
+    print("Verdade");
+  } else if (true) {
+    print("Verdade no ELSE");
+  } else {
+    print("Nenhuma das opcoes");
+  }
+
+  var comando = "sacar";
+
+  switch (comando) {
+    case "depositar":
+      print("Deposite um valor");
+      break;
+    case "sacar":
+      print("Faca um saque");
+      break;
+    default:
+      ("Nenhuma opcao escolhida");
+  }
+  //Estruturas de Repetição.
+  void main() {
+    var numero = 1;
+
+    while (numero < 10) {
+      print("Mensagem de Texto");
+      numero++;
+    }
+
+    for (int numero = 10; numero >= 0; numero--) {
+      print("Mensagem de Texto $numero");
+    }
+
+    for (int numero = 1; numero <= 10; numero++) {
+      print("Mensagem de Texto ");
+    }
+
+    var postagens = ["POSTAGEM1", "POSTAGEM2", "POSTAGEM3"];
+
+    for (var postagem in postagens) {
+      print("Titulo: $postagem");
+      print("------");
+    }
+    //Estruturas de Repetição com do While
+    var numero = 1;
+    do {
+    print("TESTE");
+    numero++;
+  } while (numero <= 10);
+}
+  }
 }
