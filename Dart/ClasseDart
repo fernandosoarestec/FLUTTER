@@ -1,0 +1,44 @@
+class Casa {
+  //Atributos
+  String cor = "";
+  
+  //Metodos
+  
+  void abrirJanela(int qtdJanelas){
+  
+     print("Abrir Janelas $qtdJanelas da casa $cor");  
+  }
+  
+  void abrirPorta(){
+  
+  print("Abrir Porta da casa $cor");
+  
+  }
+  
+  void AbrirCasa(){
+  
+      this.abrirJanela(4);
+      this.cor = "Verde";
+  
+  }
+
+
+}
+
+
+void main() {
+  Casa minhaCasa = new Casa();
+  Casa minhaCasa2 = new Casa();
+  
+  minhaCasa.cor = "Amarela";
+  minhaCasa2.cor = "Azul";
+  
+  print(minhaCasa.cor);
+  
+  minhaCasa.abrirJanela(5);
+  minhaCasa2.abrirJanela(8);
+  minhaCasa.AbrirCasa();
+  
+  
+  
+}

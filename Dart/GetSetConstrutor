@@ -1,0 +1,55 @@
+class Conta{
+  
+  double _saldo = 0;
+  //Construtor
+  Conta(){
+   this._saldo = 0;
+  }
+  //getter
+  get exibiraldo{
+    return this._saldo;
+  
+  }
+  //setter
+  set saque (double saque){
+  
+     this._saldo = this._saldo - saque;
+    
+  }
+  
+  double realizardeposito(double valor){
+    
+     
+    if (valor >0) {
+    this._saldo = this._saldo + valor;
+    }
+    else if (valor<0){
+      print("O valor deve ser positivo e maior que zero");
+    }
+    else if (valor==0){
+      print("Nao é possível depósito zerado");
+    }
+    return this._saldo;
+     
+  }
+  
+  
+
+
+}
+
+
+void main() {
+  
+  print("Teste Conta");
+  
+  Conta conta = new Conta();
+  print(conta.exibiraldo);
+  conta.realizardeposito(500);
+  print(conta.exibiraldo);
+  conta.saque = 50;
+  print(conta.exibiraldo);
+  
+  
+  
+}
